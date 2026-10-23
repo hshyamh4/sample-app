@@ -10,4 +10,14 @@ public class HelloWorldController {
     public String sendGreetings() {
         return "Hello, World!";
     }
+
+    @GetMapping("/add")
+    public int add() {
+        int a = 10, b = 20;
+
+        return a + b;
+    }
+
+
+
 }

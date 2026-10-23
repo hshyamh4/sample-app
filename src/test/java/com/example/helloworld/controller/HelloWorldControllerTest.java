@@ -24,4 +24,12 @@ public class HelloWorldControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string("Hello, World!"));
     }
+
+    @Test
+    public void shouldReturnExpectedAdd() throws Exception {
+
+        mockMvc.perform(get("/add"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("30"));
+    }
 }
