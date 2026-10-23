@@ -32,4 +32,13 @@ public class HelloWorldControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string("30"));
     }
+    @Test
+    public void shouldReturnExpectedsubtract() throws Exception {
+
+        mockMvc.perform(get("/subtract"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("80"));
+    }
+
+
 }

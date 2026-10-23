@@ -17,6 +17,12 @@ public class HelloWorldController {
 
         return a + b;
     }
+    @GetMapping("/subtract")
+    public int subtract() {
+        int a = 100, b = 20;
+
+        return a - b;
+    }
 
 
 
